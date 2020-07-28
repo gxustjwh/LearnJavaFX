@@ -21,6 +21,7 @@ public class ImprovedHelloFXApp extends Application {
         TextField nameFld = new TextField();
         Label msg = new Label();
         msg.setStyle("-fx-text-fill: blue;");
+
         // Create buttons
         Button sayHelloBtn = new Button("Say Hello");
         Button exitBtn = new Button("Exit");
