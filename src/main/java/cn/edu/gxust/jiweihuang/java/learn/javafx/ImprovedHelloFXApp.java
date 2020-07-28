@@ -10,12 +10,13 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class ImprovedHelloFXApp extends Application {
+
     public static void main(String[] args) {
         Application.launch(args);
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception {
+    public void start(Stage primaryStage) {
         Label nameLbl = new Label("Enter your name:");
         TextField nameFld = new TextField();
         Label msg = new Label();
@@ -28,7 +29,7 @@ public class ImprovedHelloFXApp extends Application {
         sayHelloBtn.setOnAction(e -> {
             String name = nameFld.getText();
             if (name.trim().length() > 0) {
-                msg.setText("Hello " + name);
+                msg.setText("Hello： " + name);
             } else {
                 msg.setText("Hello there");
             }
