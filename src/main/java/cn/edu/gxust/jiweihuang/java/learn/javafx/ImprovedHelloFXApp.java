@@ -20,7 +20,7 @@ public class ImprovedHelloFXApp extends Application {
         Label nameLbl = new Label("Enter your name:");
         TextField nameFld = new TextField();
         Label msg = new Label();
-        msg.setStyle("-fx-text-fill: blue;");
+        msg.setStyle("-fx-text-fill: #0004ff;");
 
         // Create buttons
         Button sayHelloBtn = new Button("Say Hello");
